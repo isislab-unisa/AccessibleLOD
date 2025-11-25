@@ -1,0 +1,43 @@
+services:
+  backend:
+    build: ./backend
+    container_name: checloud-backend
+    restart: unless-stopped
+    ports:
+      - "5005:5005"
+    environment:
+      MONGO_URI: mongodb://mongo:27017/mywebapp
+    depends_on:
+      - mongodb
+
+  frontend:
+    build: ./frontend/che-cloud
+    container_name: checloud-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  mongodb:
+    image:  mongo:4.4.6
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./backend/mongo_data:/data/db
+      - ./backend/mongo_data:/mongo_data
+      - ./backend/mongo_data/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.s
+
+  python-service:
+    build: ../python_service/
+    container_name: che-cloud-python-service
+    ports:
+      - "5001:5001"
+    volumes:
+      - python_service_data:/data
+
+volumes:
+  mongo_data:
+  python_service_data:
