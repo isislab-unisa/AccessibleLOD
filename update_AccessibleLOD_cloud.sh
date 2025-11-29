@@ -5,20 +5,20 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Pull the new monitoring requests if any
 cd "$PROJECT_ROOT" || exit 1
-git pull
+#git pull
 
 # Run the Python script
-cd "$PROJECT_ROOT/CHe_cloud_generator" || exit 1
+cd "$PROJECT_ROOT/AccessibleLOD_generator" || exit 1
 source venv/bin/activate
-cd "$PROJECT_ROOT/CHe_cloud_generator/src" || exit 1
-python3 update_CHe_cloud.py
+cd "$PROJECT_ROOT/AccessibleLOD_generator/src" || exit 1
+#python3 evaluate_datasets.py
 
 # Run the cleanup and import script
 cd "$PROJECT_ROOT/WebApp/backend" || exit 1
 ./clean_and_reimport_data_db.sh
 
 # Remove the local clone of the CHe cloud repo
-cd "$PROJECT_ROOT/WebApp/backend/src" || exit 1
-rm -r local-clone
+#cd "$PROJECT_ROOT/WebApp/backend/src" || exit 1
+#rm -r local-clone
 
 

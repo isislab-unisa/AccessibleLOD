@@ -3,7 +3,7 @@ import axios from 'axios';
 import { base_url } from '../api';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/footer';
-import { Link } from 'react-router-dom';
+import Navbar from '../components/navbar';
 
 function Search() {
   const [name, setName] = useState('');
@@ -23,16 +23,14 @@ function Search() {
     let selectedFieldArray = Object.keys(fields).filter(f => fields[f]);
     let queryFields;
     if (selectedFieldArray.length === 0 && name.trim() === '') {
-      // Search all fields when nothing selected and search is empty
       queryFields = ['title', 'description', 'identifier', 'keywords'].join(',');
     } else if (selectedFieldArray.length === 0) {
-      // Fallback to 'title' if nothing selected and query is present
       queryFields = 'title';
     } else {
       queryFields = selectedFieldArray.join(',');
     }
     try {
-      const res = await axios.get(`${base_url}/CHe_cloud_data/search`, {
+      const res = await axios.get(`${base_url}/AccessibleLOD_data/search`, {
         params: {
           q: nameQuery,
           fields: queryFields,
@@ -62,32 +60,26 @@ function Search() {
     setFields(prev => ({ ...prev, [field]: !prev[field] }));
   };
 
-  const handleCheCloud = () => {
-    navigate('/');
-  };
+  const generateDatasetLink = (id) => `/accessibility_info?dataset_id=${id}`;
 
-  const generateDatasetLink = (id) => `/fairness-info?dataset_id=${id}`;
+  // **Pagination window**
+  const getVisiblePages = () => {
+    const delta = 2; // pages before and after current
+    let start = Math.max(1, page - delta);
+    let end = Math.min(totalPages, page + delta);
+    const pages = [];
+    for (let i = start; i <= end; i++) pages.push(i);
+    return pages;
+  };
 
   return (
     <>
-          <div className="container-fluid mt-3 px-4">
-            <div className="d-flex justify-content-start gap-2 mb-3">
-                <Link to="/" className="fw-bold fs-4 text-decoration-none" style={{color: '#8da89f'}}>CHeCLOUD</Link>
-                <Link to="/" className="d-flex align-items-center">
-                <img 
-                    src="/favicon.png" 
-                    alt="Cloud Logo" 
-                    style={{ height: "40px", width: "40px", marginRight: "7px" }} 
-                />
-                </Link>
-                <Link to="/search" className="btn btn-outline-success">Search</Link>
-                <Link to="/add-dataset" className="btn btn-outline-success">Add a Dataset</Link>
-                <Link to="/dashboard" className="btn btn-outline-success">Dashboard</Link>
-                <Link to="/about" className="btn btn-outline-success">About</Link>
-          </div>
-        </div>
+      <div className="container-fluid mt-3 px-4">
+        <Navbar />
+      </div>
+
       <div className="container mt-3 pb-1 min-vh-100">
-        <h3 className="mb-4 mt-4">Search into the CHeCLOUD</h3>
+        <h3 className="mb-4 mt-4">Search into the AccessibleLOD</h3>
 
         <form className="mb-4" onSubmit={handleSearch}>
           <div className="d-flex mb-2">
@@ -98,28 +90,27 @@ function Search() {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#8da89f', border: 'none' }}>
+            <button
+              type="submit"
+              className="btn btn-primary"
+              style={{ backgroundColor: '#46B9B9', border: 'none' }}
+            >
               Search
             </button>
           </div>
 
           <div className="mb-3 d-flex flex-wrap">
-            <label className="form-check me-3">
-              <input type="checkbox" className="form-check-input" checked={fields.title} onChange={() => handleCheckboxChange('title')} />
-              Title
-            </label>
-            <label className="form-check me-3">
-              <input type="checkbox" className="form-check-input" checked={fields.description} onChange={() => handleCheckboxChange('description')} />
-              Description
-            </label>
-            <label className="form-check me-3">
-              <input type="checkbox" className="form-check-input" checked={fields.identifier} onChange={() => handleCheckboxChange('identifier')} />
-              ID
-            </label>
-            <label className="form-check">
-              <input type="checkbox" className="form-check-input" checked={fields.keywords} onChange={() => handleCheckboxChange('keywords')} />
-              Keywords
-            </label>
+            {['title', 'description', 'identifier', 'keywords'].map((f) => (
+              <label key={f} className="form-check me-3">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  checked={fields[f]}
+                  onChange={() => handleCheckboxChange(f)}
+                />
+                {f === 'identifier' ? 'ID' : f.charAt(0).toUpperCase() + f.slice(1)}
+              </label>
+            ))}
           </div>
         </form>
 
@@ -140,21 +131,60 @@ function Search() {
               ))}
             </ul>
 
+            {/* Responsive Pagination */}
             <nav>
-              <ul className="pagination mb-5">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                  <li key={p} className={`page-item ${p === page ? 'active' : ''}`}>
-                    <button className="page-link" onClick={() => handlePageChange(p)} disabled={p === page}           
+              <ul className="pagination mb-5 justify-content-center flex-wrap">
+                {page > 1 && (
+                  <li className="page-item">
+                    <button
+                      className="page-link"
+                      onClick={() => handlePageChange(page - 1)}
                       style={{
-                        backgroundColor: p === page ? '#8da89f' : '#ffffff',
-                        color: p === page ? '#fff' : '#000',
-                        borderColor: '#8da89f',
+                        backgroundColor: '#46B9B9',
+                        color: '#fff',
+                        borderColor: '#46B9B9',
                         transition: 'background-color 0.3s ease'
-                      }}>
+                      }}
+                    >
+                      &laquo;
+                    </button>
+                  </li>
+                )}
+
+                {getVisiblePages().map((p) => (
+                  <li key={p} className={`page-item ${p === page ? 'active' : ''}`}>
+                    <button
+                      className="page-link"
+                      onClick={() => handlePageChange(p)}
+                      disabled={p === page}
+                      style={{
+                        backgroundColor: p === page ? '#46B9B9' : '#ffffff',
+                        color: p === page ? '#fff' : '#000',
+                        borderColor: '#46B9B9',
+                        transition: 'background-color 0.3s ease'
+                      }}
+                    >
                       {p}
                     </button>
                   </li>
                 ))}
+
+                {page < totalPages && (
+                  <li className="page-item">
+                    <button
+                      className="page-link"
+                      onClick={() => handlePageChange(page + 1)}
+                      style={{
+                        backgroundColor: '#46B9B9',
+                        color: '#fff',
+                        borderColor: '#46B9B9',
+                        transition: 'background-color 0.3s ease'
+                      }}
+                    >
+                      &raquo;
+                    </button>
+                  </li>
+                )}
               </ul>
             </nav>
           </>
@@ -164,6 +194,7 @@ function Search() {
           )
         )}
       </div>
+
       <Footer />
     </>
   );

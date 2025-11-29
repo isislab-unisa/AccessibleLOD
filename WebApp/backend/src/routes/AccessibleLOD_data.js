@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { response } = require('express');
-const { getAllIdsAndLinks, getAllJsonDataByID, getAllJsonData, getCollection } = require('../models/CHe_cloud_data');
+const { getAllIdsAndLinks, getAllJsonDataByID, getAllJsonData, getCollection } = require('../models/AccessibleLOD_data');
 const express = require('express');
 const fs = require('fs');
 const csv = require('csv-parser');
@@ -8,7 +8,7 @@ require('dotenv').config();
 const path = require('path');
 
 const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
-const fairness_page = 'fairness-info';
+const fairness_page = 'accessibility_info';
 const khgeartbeatUrl = process.env.KGHEARTBEAT_API
 
 const keyMapping = {
@@ -47,24 +47,39 @@ router.get('/all_ch_links', async (req, res) => {
             return res.status(404).json({ message: "No elements founded." });
         }
         const nodes = items.map(item => {
-            let matchedKeyword = item.keywords.find(kw => allowedKeywords.includes(kw));
-            if (matchedKeyword == 'ch-tangible'){
-                matchedKeyword = 'Tangible'
+            let matchedKeyword = item.domain;
+            if (matchedKeyword == 'government'){
+                matchedKeyword = 'Government'
             }
-            if (matchedKeyword == 'ch-intangible'){
-                matchedKeyword = 'Intangible'
+            if (matchedKeyword == 'cross_domain'){
+                matchedKeyword = 'Cross Domain'
             }
-            if (matchedKeyword == 'ch-generic'){
-                matchedKeyword = 'Generic'
+            if (matchedKeyword == 'life_sciences'){
+                matchedKeyword = 'Life Sciences'
             }
-            if (matchedKeyword == 'ch-natural'){
-                matchedKeyword = 'Natural'
+            if (matchedKeyword == 'publications'){
+                matchedKeyword = 'Publications'
+            }
+            if (matchedKeyword == 'geography'){
+                matchedKeyword = 'Geography'
+            }
+            if (matchedKeyword == 'user_generated'){
+                matchedKeyword = 'User Generated'
+            }
+            if (matchedKeyword == 'linguistics'){
+                matchedKeyword = 'Linguistics'
+            }
+            if (matchedKeyword == 'social_networking'){
+                matchedKeyword = 'Social Networking'
+            }
+            if (matchedKeyword == 'media'){
+                matchedKeyword = 'Media'
             }
             return {
                 "id": item.identifier,
                 "title" : item.title,
                 "url": `${frontendUrl}${fairness_page}?dataset_id=${item.identifier}`,
-                "category": matchedKeyword || 'Generic'
+                "category": matchedKeyword != '' ? matchedKeyword : 'No domain',
             }
         });
         const links = [];
@@ -90,7 +105,7 @@ router.get('/all_ch_links', async (req, res) => {
         res.status(500).json({ message: "Server error" });
     }
 });
-
+/* 
 router.get('/fairness_data/:id', async (req, res) => {
     try{
         const targetId = req.params.id;
@@ -112,7 +127,36 @@ router.get('/fairness_data/:id', async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: "Server error" });
     }
+}); */
+
+router.get('/accessibility_data/:id', async (req, res) => {
+    try{
+        const csvPath = path.join(__dirname, '../../data/accessibleLOD_scores.csv'); 
+        const targetId = req.params.id;
+        let found = false;
+        fs.createReadStream(csvPath)
+            .pipe(csv())
+            .on('data', (row) => {
+            if (row['KG'] === targetId) {
+                found = true;
+                res.json(row);
+            }
+            })
+            .on('end', () => {
+            if (!found) {
+                res.status(404).json({ message: 'Row not found' });
+            }
+            })
+            .on('error', (err) => {
+            console.error(err);
+            res.status(500).json({ error: 'Error reading CSV file' });
+            });
+
+    } catch (error) {
+        res.status(500).json({ message: "Server error" });
+    }
 });
+
 
 router.get('/dataset_metadata/:id', async (req, res) => {
     try{

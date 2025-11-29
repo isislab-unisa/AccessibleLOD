@@ -1,7 +1,7 @@
-docker stop mongodb
-docker rm mongodb
+docker stop mongodb-accessiblelod
+docker rm mongodb-accessiblelod
 rm -rf mongo_data
 mkdir mongo_data
 docker-compose up -d
-cp ./CHe_cloud_data.json ./mongo_data
-docker exec -it mongodb mongoimport --db mydatabase --collection CHe_cloud_data --file ./mongo_data/CHe_cloud_data.json --jsonArray --upsert
+cp ./AccessibleLOD_data.json ./mongo_data
+docker exec -it mongodb-accessiblelod mongoimport --db mydatabase --collection AccessibleLOD_data --file ./mongo_data/AccessibleLOD_data.json --jsonArray --upsert

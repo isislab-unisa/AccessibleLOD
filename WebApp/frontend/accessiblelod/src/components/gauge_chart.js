@@ -83,7 +83,7 @@ function GaugeChart({ label, value, color = '#008FFB', height = 350 }) {
     labels: [label],
   
   };
-  const series = [(value / 4) * 100 ];
+  const series = [ value ];
   return (
       <ReactApexChart options={options} series={series} type="radialBar" height={height} />
   );
