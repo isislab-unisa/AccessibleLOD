@@ -442,6 +442,8 @@ function FairnessInfo(){
                                                     metric.category === 'Operable' ? 'primary' :
                                                     metric.category === 'Understandable' ? 'teal' :
                                                     metric.category === 'Robust' ? 'indigo' :
+                                                    metric.category === 'Accessibility for Visually Impaired' ? 'orange' :
+                                                    metric.category === 'Accessibility for Deaf or Hard-of-hearing Users' ? 'pink' :
                                                     metric.category === 'Overall Scores' ? 'purple' :
                                                     'secondary'
                                                 } text-white`}>
@@ -561,6 +563,13 @@ function FairnessInfo(){
                 .bg-purple {
                     background-color: #6f42c1 !important;
                 }
+                .bg-orange {
+                    background-color: #fd7e14 !important;
+                }
+                .bg-pink {
+                    background-color: #e83e8c !important;
+                }
+
             `}</style>
         </>
       );
