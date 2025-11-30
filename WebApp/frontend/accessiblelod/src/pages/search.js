@@ -4,6 +4,7 @@ import { base_url } from '../api';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
+import { Link } from 'react-router-dom';
 
 function Search() {
   const [name, setName] = useState('');
@@ -118,16 +119,14 @@ function Search() {
           <>
             <ul className="list-group mb-3">
               {results.map((item) => (
-                <a
-                  key={item.identifier}
-                  href={generateDatasetLink(item.identifier)}
-                  className="list-group-item list-group-item-action"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <strong>{item.title}</strong><br />
-                  <small className="text-muted">ID: {item.identifier}</small>
-                </a>
+              <Link
+                key={item.identifier}
+                to={generateDatasetLink(item.identifier)}
+                className="list-group-item list-group-item-action"
+              >
+                <strong>{item.title}</strong><br />
+                <small className="text-muted">ID: {item.identifier}</small>
+              </Link>
               ))}
             </ul>
 

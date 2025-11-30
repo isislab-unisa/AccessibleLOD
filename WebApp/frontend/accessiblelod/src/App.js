@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import React, { useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import { Route, Routes, Link} from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Cloud from './pages/cloud';
 import FairnessInfo from './pages/accessibility_info.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,20 +22,20 @@ function App() {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
   
+  
   return (
-      <Router basename='/'>
+      <HashRouter>
         <Routes>
-          <Route path="/" element={isMobile ? <Dashboard /> : <Cloud />} />
-          <Route basename={'/'} path='*' element={<Cloud />} /> 
-          <Route basename={'/'} path='/accessibility_info' element={<FairnessInfo />} />
-          <Route basename={'/'} path='/add-dataset' element={<AddDataset />} />
-          <Route basename={'/'} path='/search' element={<Search />} />
-          <Route basename={'/'} path='/dashboard' element={<Dashboard />} />
-          <Route basename={'/'} path='/about' element={<About />} />
+          <Route path="/" element={isMobile ? <Search /> : <Cloud />} />
+          <Route path='/accessibility_info' element={<FairnessInfo />} />
+          {/* <Route path='/add-dataset' element={<AddDataset />} /> */}
+          <Route path='/search' element={<Search />} />
+          {/* <Route path='/dashboard' element={<Dashboard />} /> */}
+          <Route path='/about' element={<About />} />
+          <Route path='*' element={<Cloud />} /> 
         </Routes>
-      </Router>
+      </HashRouter>
   );
 }
-
 
 export default App;

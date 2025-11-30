@@ -67,6 +67,265 @@
             "email": "andrea@wordlift.io"
         }
     },
+    "agrovoc": {
+        "_id": "agrovoc",
+        "identifier": "agrovoc",
+        "sparql": [
+            {
+                "title": "Public SPARQL endpoint",
+                "_id": "a2e16ee2-0d7d-fc8b-e8dd-604ad458d7c0",
+                "description": "Public SPARQL endpoint,  Fuseki 3.6.0 .",
+                "access_url": "https://agrovoc.fao.org/sparql",
+                "status": "OK"
+            }
+        ],
+        "full_download": [
+            {
+                "media_type": "application/zip",
+                "description": "which only includes AGROVOC concepts (NT format). See https://data.apps.fao.org/catalog/organization/agrovoc  for latest link, updated monthly.",
+                "download_url": "https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.nt.zip",
+                "status": "FAIL (Unhandled content type. Must be text/*, application/xml, or application/*+xml)",
+                "title": "AGROVOC CORE NT",
+                "mirror": [],
+                "_id": "83d1de87-6ecc-f58c-4b91-d4c77488be76",
+                "access_url": ""
+            },
+            {
+                "media_type": "application/zip",
+                "description": "which includes AGROVOC concepts + links to outside resources (NT format). See https://data.apps.fao.org/catalog/organization/agrovoc  for latest link, updated monthly.",
+                "download_url": "https://agrovoc.fao.org/latestAgrovoc/agrovoc_lod.nt.zip",
+                "status": "FAIL (Unhandled content type. Must be text/*, application/xml, or application/*+xml)",
+                "title": "AGROVOC Linked Open Data (LOD)  NT",
+                "mirror": [],
+                "_id": "08b4ff51-12ba-ca63-2cc7-986ff8ef8b9f",
+                "access_url": ""
+            },
+            {
+                "_id": "a8d4e24b-498a-a8d7-9023-0d7a695d58e8",
+                "title": "AGROVOC CORE RDF",
+                "description": "which only includes AGROVOC concepts (RDF). See also https://data.apps.fao.org/catalog/organization/agrovoc  for latest link, updated monthly.",
+                "access_url": "",
+                "media_type": "application/zip",
+                "download_url": "https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.rdf.zip",
+                "mirror": [],
+                "status": "FAIL (Unhandled content type. Must be text/*, application/xml, or application/*+xml)"
+            },
+            {
+                "_id": "d84af64f-9e5c-54a3-f595-0e7d532ce8ed",
+                "title": "AGROVOC Linked Open Data (LOD)  NQ",
+                "description": "which includes AGROVOC concepts + links to outside resources (NQ format). See also https://data.apps.fao.org/catalog/organization/agrovoc  for latest link, updated monthly.",
+                "access_url": "",
+                "media_type": "application/zip",
+                "download_url": "https://agrovoc.fao.org/latestAgrovoc/agrovoc_lod.nq.zip",
+                "mirror": [],
+                "status": "FAIL (Unhandled content type. Must be text/*, application/xml, or application/*+xml)"
+            }
+        ],
+        "website": "http://www.fao.org/agrovoc/",
+        "keywords": [
+            "food",
+            "nutrition",
+            "agriculture",
+            "forestry",
+            "fisheries",
+            "scientific and common names of animals and plants",
+            "environment",
+            "biological notions",
+            "techniques of plant cultivation"
+        ],
+        "license": "https://creativecommons.org/licenses/by/3.0/",
+        "title": "AGROVOC",
+        "doi": "",
+        "Image": "",
+        "other_download": [],
+        "description": {
+            "en": "AGROVOC is a controlled vocabulary covering all areas of interest of the Food and Agriculture Organization (FAO) of the United Nations, including food, nutrition, agriculture, forestry, fisheries, scientific and common names of animals and plants, environment, biological notions, techniques of plant cultivation and more.. It is published by FAO and edited by a community of experts.\n\nAGROVOC is an RDF/ SKOS-XL concept scheme, and a Linked Open Data (LOD) set edited by the VocBench tool. It is available in up to 41 languages. The basic notions for a concept scheme are: concepts and terms. Concepts are grouped into 25 broad subject areas. For more information on the structure of the thesaurus and its historical background please consult the thesaurus introduction.\n\nAGROVOC is widely used in specialized libraries as well as digital libraries and repositories to index content and for the purpose of text mining. It is also used as a specialized tagging resource for knowledge and content organization by FAO and other third-party stakeholders."
+        },
+        "links": [
+            {
+                "_id": "d0aa01a7-c522-9595-efe8-ad6d51959032",
+                "target": "dbpedia",
+                "value": "11013"
+            },
+            {
+                "_id": "01ad3b7c-c7aa-5788-d003-6122013ab28c",
+                "target": "dewey_decimal_classification",
+                "value": "401"
+            },
+            {
+                "_id": "1d12251e-4778-caa7-962d-e287c5f8112b",
+                "target": "fao-geopolitical-ontology",
+                "value": "253"
+            },
+            {
+                "_id": "b60d20f3-43db-5868-210b-ac55536ef4d0",
+                "target": "gemet",
+                "value": "1185"
+            },
+            {
+                "_id": "d4443055-2cd3-9169-c6b3-f74d194b2899",
+                "target": "geonames-semantic-web",
+                "value": "206"
+            },
+            {
+                "_id": "67f04973-348c-8b1d-118d-9f0fcee33c34",
+                "target": "lcsh",
+                "value": "1079"
+            },
+            {
+                "_id": "ab078860-3c6b-19a5-5abc-e876aa0769f3",
+                "target": "environmental-applications-reference-thesaurus",
+                "value": "1385"
+            },
+            {
+                "_id": "2f541f63-4764-2c7c-91bf-dfc71dea48f0",
+                "target": "eurovoc",
+                "value": "1783"
+            }
+        ],
+        "owner": {
+            "name": "",
+            "email": "kristin.kolshus@gmail.com"
+        },
+        "namespace": "http://aims.fao.org/aos/agrovoc/",
+        "triples": "5878468",
+        "domain": "life_sciences",
+        "example": [],
+        "contact_point": {
+            "name": "Inmaculada SubiratsColl",
+            "email": "imma.subirats@fao.org"
+        }
+    },
+    "bio2rdf-affymetrix": {
+        "owner": {
+            "name": "",
+            "email": "ayaouaarouss2019@gmail.com"
+        },
+        "identifier": "bio2rdf-affymetrix",
+        "image": "",
+        "website": "http://affymetrix.bio2rdf.org/",
+        "triples": "86942371",
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2011-09-19",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download affymetrix.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/affymetrix/affymetrix.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/affymetrix/affymetrix.nq.gz"
+            }
+        ],
+        "description": {
+            "en": "This dataset contains the probesets used in the Affymetrix microarrays."
+        },
+        "title": "Bio2RDF::Affymetrix",
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/affymetrix:185061_at",
+                "status": "FAIL (301)"
+            }
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "other_download": [
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/affymetrix/affymetrix.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/affymetrix/affymetrix.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/affymetrix/bio2rdf-affymetrix.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/affymetrix/bio2rdf-affymetrix.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/affymetrix/affymetrix.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/affymetrix/affymetrix.schema.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/affymetrix/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/affymetrix/sitemap.xml"
+            }
+        ],
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/affymetrix:",
+        "links": [
+            {
+                "target": "bio2rdf-affymetrix",
+                "value": "1398264"
+            },
+            {
+                "target": "bio2rdf-interpro",
+                "value": "5999"
+            },
+            {
+                "target": "bio2rdf-mgi",
+                "value": "18818"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "400798"
+            },
+            {
+                "target": "bio2rdf-omim",
+                "value": "17078"
+            },
+            {
+                "target": "bio2rdf-sgd",
+                "value": "6122"
+            },
+            {
+                "target": "bio2rdf-wormbase",
+                "value": "14768"
+            }
+        ],
+        "_id": "bio2rdf-affymetrix0000018ec34a360f",
+        "time": "0000018ec34a360f",
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://affymetrix.bio2rdf.org/sparql",
+                "status": "OK"
+            }
+        ],
+        "doi": "",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
+        }
+    },
     "pleiades": {
         "_id": "pleiades",
         "identifier": "pleiades",
@@ -215,6 +474,168 @@
             "email": "K.L.Watson@sussex.ac.uk"
         }
     },
+    "bio2rdf-hgnc": {
+        "_id": "bio2rdf-hgnc",
+        "identifier": "bio2rdf-hgnc",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-ccds",
+                "value": "29446"
+            },
+            {
+                "target": "bio2rdf-ensembl",
+                "value": "56758"
+            },
+            {
+                "target": "bio2rdf-hgnc",
+                "value": "41826"
+            },
+            {
+                "target": "bio2rdf-mgi",
+                "value": "17768"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "34453"
+            },
+            {
+                "target": "bio2rdf-omim",
+                "value": "14252"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "16672"
+            },
+            {
+                "target": "bio2rdf-refseq",
+                "value": "36512"
+            },
+            {
+                "target": "bio2rdf-rgd",
+                "value": "17417"
+            },
+            {
+                "target": "bio2rdf-ucsc",
+                "value": "21270"
+            },
+            {
+                "target": "bio2rdf-uniprot",
+                "value": "19603"
+            },
+            {
+                "target": "bio2rdf-vega",
+                "value": "24348"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2011-09-19",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Hgnc",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download hgnc_complete_set.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/hgnc/hgnc_complete_set.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/hgnc/hgnc_complete_set.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/hgnc:7",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://hgnc.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/hgnc/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/hgnc/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/hgnc/hgnc.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/hgnc/hgnc.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/hgnc/bio2rdf-hgnc.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/hgnc/bio2rdf-hgnc.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/hgnc/hgnc.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/hgnc/hgnc.schema.owl"
+            },
+            {
+                "media_type": "",
+                "description": "Mappings (SIO)",
+                "status": "OK",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/hgnc/bio2rdf_hgnc_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/hgnc/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/hgnc/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "The HGNC gives unique and meaningful names to every human gene. For each known human gene we approve a gene name and symbol (short-form abbreviation).  All approved symbols are stored in the HGNC database."
+        },
+        "owner": "",
+        "website": "http://hgnc.bio2rdf.org/",
+        "triples": "3628205",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/hgnc:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
+        }
+    },
     "cz-czso-average-salaries": {
         "_id": "cz-czso-average-salaries",
         "identifier": "cz-czso-average-salaries",
@@ -318,6 +739,146 @@
         "contact_point": {
             "name": "Martin Nečaský",
             "email": "necasky@opendata.cz"
+        }
+    },
+    "bio2rdf-gendr": {
+        "_id": "bio2rdf-gendr",
+        "identifier": "bio2rdf-gendr",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-gendr",
+                "value": "666"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "322"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "119"
+            },
+            {
+                "target": "bio2rdf-taxonomy",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-wormbase",
+                "value": "1"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Gendr",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gendr_gene_expression.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/gendr/gendr_gene_expression.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/gendr/gendr_gene_expression.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gendr_gene_manipulations.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/gendr/gendr_gene_manipulations.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/gendr/gendr_gene_manipulations.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/gendr:2",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://gendr.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/gendr/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/gendr/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/gendr/gendr.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/gendr/gendr.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/gendr/bio2rdf-gendr.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/gendr/bio2rdf-gendr.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/gendr/gendr.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/gendr/gendr.schema.owl"
+            },
+            {
+                "media_type": "mapping/owl",
+                "description": "Mappings (SIO)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://raw.githubusercontent.com/bio2rdf/bio2rdf-mapping/master/2/gendr/bio2rdf_gendr_sio_mapping.owl])",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/gendr/bio2rdf_gendr_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/gendr/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/gendr/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "GenDR is a database of genes associated with dietary restriction (DR). GenDR includes two datasets: 1) genes inferred from experiments in model organisms in which genetic manipulations cancel out or disrupt the life-extending effects of DR; 2) genes robustly altered due to DR, derived from a meta-analysis of microarray DR studies in mammals"
+        },
+        "owner": "",
+        "website": "http://gendr.bio2rdf.org/",
+        "triples": "11663",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/gendr:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
         }
     },
     "cz-czso-social-service-facilities": {
@@ -425,6 +986,143 @@
             "email": "necasky@opendata.cz"
         }
     },
+    "bio2rdf-dbsnp": {
+        "_id": "bio2rdf-dbsnp",
+        "identifier": "bio2rdf-dbsnp",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-dbsnp",
+                "value": "447298"
+            },
+            {
+                "target": "bio2rdf-genbank",
+                "value": "138"
+            },
+            {
+                "target": "bio2rdf-gi",
+                "value": "138"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "11324"
+            },
+            {
+                "target": "bio2rdf-refseq",
+                "value": "71624"
+            },
+            {
+                "target": "bio2rdf-taxonomy",
+                "value": "1"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Dbsnp",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download dbsnp.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/dbsnp/dbsnp.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/dbsnp/dbsnp.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/dbsnp:rs199422184",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://dbsnp.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/dbsnp/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/dbsnp/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/dbsnp/dbsnp.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/dbsnp/dbsnp.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/dbsnp/bio2rdf-dbsnp.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/dbsnp/bio2rdf-dbsnp.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/dbsnp/dbsnp.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/dbsnp/dbsnp.schema.owl"
+            },
+            {
+                "media_type": "mapping/owl",
+                "description": "Mappings (SIO)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://raw.githubusercontent.com/bio2rdf/bio2rdf-mapping/master/2/dbsnp/bio2rdf_dbsnp_sio_mapping.owl])",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/dbsnp/bio2rdf_dbsnp_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/dbsnp/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/dbsnp/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "The dbSNP database is a repository for both single base nucleotide subsitutions and short deletion and insertion polymorphisms."
+        },
+        "owner": "",
+        "website": "http://dbsnp.bio2rdf.org/",
+        "triples": "8801487",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/dbsnp:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
+        }
+    },
     "italian-public-schools-linkedopendata-it": {
         "_id": "italian-public-schools-linkedopendata-it",
         "identifier": "italian-public-schools-linkedopendata-it",
@@ -498,6 +1196,502 @@
         "contact_point": {
             "name": "linkedopendata.it",
             "email": "info@linkedopendata.it"
+        }
+    },
+    "bio2rdf-clinicaltrials": {
+        "_id": "bio2rdf-clinicaltrials",
+        "identifier": "bio2rdf-clinicaltrials",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-clinicaltrials",
+                "value": "592167"
+            },
+            {
+                "target": "bio2rdf-obi",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "18322"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Clinicaltrials",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download clinicaltrials.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/clinicaltrials/clinicaltrials.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/clinicaltrials/clinicaltrials.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/clinicaltrials:NCT00050895",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://clinicaltrials.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/clinicaltrials/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/clinicaltrials/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/clinicaltrials/clinicaltrials.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/clinicaltrials/clinicaltrials.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/clinicaltrials/bio2rdf-clinicaltrials.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/clinicaltrials/bio2rdf-clinicaltrials.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/clinicaltrials/clinicaltrials.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/clinicaltrials/clinicaltrials.schema.owl"
+            },
+            {
+                "media_type": "mapping/owl",
+                "description": "Mappings (SIO)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://raw.githubusercontent.com/bio2rdf/bio2rdf-mapping/master/2/clinicaltrials/bio2rdf_clinicaltrials_sio_mapping.owl])",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/clinicaltrials/bio2rdf_clinicaltrials_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/clinicaltrials/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/clinicaltrials/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "ClinicalTrials.gov is a registry and results database of publicly and privately supported clinical studies of human participants conducted around the world. "
+        },
+        "owner": "",
+        "website": "http://clinicaltrials.bio2rdf.org/",
+        "triples": "8323598",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/clinicaltrials:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
+        }
+    },
+    "bio2rdf-interpro": {
+        "_id": "bio2rdf-interpro",
+        "identifier": "bio2rdf-interpro",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-blocks",
+                "value": "5787"
+            },
+            {
+                "target": "bio2rdf-cath",
+                "value": "2582"
+            },
+            {
+                "target": "bio2rdf-cazy",
+                "value": "87"
+            },
+            {
+                "target": "bio2rdf-come",
+                "value": "194"
+            },
+            {
+                "target": "bio2rdf-ec",
+                "value": "1523"
+            },
+            {
+                "target": "bio2rdf-interpro",
+                "value": "26010"
+            },
+            {
+                "target": "bio2rdf-iuphar",
+                "value": "173"
+            },
+            {
+                "target": "bio2rdf-kegg",
+                "value": "1754"
+            },
+            {
+                "target": "bio2rdf-merops",
+                "value": "161"
+            },
+            {
+                "target": "bio2rdf-metacyc",
+                "value": "370"
+            },
+            {
+                "target": "bio2rdf-msd",
+                "value": "1241"
+            },
+            {
+                "target": "bio2rdf-pandit",
+                "value": "7242"
+            },
+            {
+                "target": "bio2rdf-pdb",
+                "value": "53625"
+            },
+            {
+                "target": "bio2rdf-priam",
+                "value": "823"
+            },
+            {
+                "target": "bio2rdf-prosite",
+                "value": "1383"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "26957"
+            },
+            {
+                "target": "bio2rdf-scop",
+                "value": "4045"
+            },
+            {
+                "target": "bio2rdf-swissprot",
+                "value": "38706"
+            },
+            {
+                "target": "bio2rdf-trembl",
+                "value": "3882"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2011-09-19",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Interpro",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download interpro.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/interpro/interpro.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/interpro/interpro.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/interpro:IPR000100",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://interpro.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/interpro/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/interpro/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/interpro/interpro.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/interpro/interpro.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/interpro/bio2rdf-interpro.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/interpro/bio2rdf-interpro.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/interpro/interpro.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/interpro/interpro.schema.owl"
+            },
+            {
+                "media_type": "",
+                "description": "Mappings (SIO)",
+                "status": "OK",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/interpro/bio2rdf_interpro_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/interpro/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/interpro/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "InterPro is an integrated database of predictive protein 'signatures' used for the classification and automatic annotation of proteins and genomes. InterPro classifies sequences at superfamily, family and subfamily levels, predicting the occurrence of functional domains, repeats and important sites."
+        },
+        "owner": "",
+        "website": "http://interpro.bio2rdf.org/",
+        "triples": "2323345",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/interpro:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
+        }
+    },
+    "bio2rdf-omim": {
+        "_id": "bio2rdf-omim",
+        "identifier": "bio2rdf-omim",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-dbsnp",
+                "value": "8501"
+            },
+            {
+                "target": "bio2rdf-do",
+                "value": "902"
+            },
+            {
+                "target": "bio2rdf-eom",
+                "value": "45"
+            },
+            {
+                "target": "bio2rdf-gi",
+                "value": "576766"
+            },
+            {
+                "target": "bio2rdf-hp",
+                "value": "4835"
+            },
+            {
+                "target": "bio2rdf-hprd",
+                "value": "12915"
+            },
+            {
+                "target": "bio2rdf-icd10",
+                "value": "1022"
+            },
+            {
+                "target": "bio2rdf-icd9",
+                "value": "820"
+            },
+            {
+                "target": "bio2rdf-img",
+                "value": "45"
+            },
+            {
+                "target": "bio2rdf-mgi",
+                "value": "12869"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "15738"
+            },
+            {
+                "target": "bio2rdf-omim",
+                "value": "95397"
+            },
+            {
+                "target": "bio2rdf-ordr",
+                "value": "2954"
+            },
+            {
+                "target": "bio2rdf-orphanet",
+                "value": "7026"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "121566"
+            },
+            {
+                "target": "bio2rdf-snomedct",
+                "value": "4833"
+            },
+            {
+                "target": "bio2rdf-umls",
+                "value": "29602"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2011-09-19",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Omim",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download omim.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/omim/omim.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/omim/omim.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/omim:603903",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://omim.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/omim/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/omim/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/omim/omim.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/omim/omim.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/omim/bio2rdf-omim.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/omim/bio2rdf-omim.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/omim/omim.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/omim/omim.schema.owl"
+            },
+            {
+                "media_type": "",
+                "description": "Mappings (SIO)",
+                "status": "OK",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/omim/bio2rdf_omim_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/omim/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/omim/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "OMIM is a comprehensive, authoritative, and timely compendium of human genes and genetic phenotypes. The full-text, referenced overviews in OMIM contain information on all known mendelian disorders and over 12,000 genes. OMIM focuses on the relationship between phenotype and genotype."
+        },
+        "owner": "",
+        "website": "http://omim.bio2rdf.org/",
+        "triples": "7980621",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/omim:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
         }
     },
     "clld-wold": {
@@ -710,6 +1904,86 @@
             "email": null
         }
     },
+    "aragodbpedia": {
+        "_id": "aragodbpedia",
+        "identifier": "aragodbpedia",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "dbpedia-es",
+                "value": "768"
+            },
+            {
+                "_id": "fdc48f27-da98-47d8-33db-af9e1c6c15ea",
+                "target": "ei2a",
+                "value": "768"
+            }
+        ],
+        "keywords": [
+            "Aragón",
+            "Aragón Government",
+            "Spain",
+            "geographic",
+            "geography",
+            "government",
+            "lod",
+            "no-proprietary-vocab",
+            "published-by-producer"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "AragoDBpedia - aragon open data",
+        "full_download": [],
+        "example": [
+            {
+                "title": "AragoDBpedia sample municipality ",
+                "media_type": "text/turtle; charset=UTF-8",
+                "description": "A sample municipality in Turtle. ",
+                "access_url": "https://opendata.aragon.es/sparql?query=define%20sql%3Adescribe-mode%20%22CBD%22%20%20DESCRIBE%20%3Chttp%3A%2F%2Fopendata.aragon.es%2Frecurso%2Fterritorio%2FMunicipio%2FAbabuj%3E&output=text%2Fturtle",
+                "status": "OK"
+            },
+            {
+                "title": "AragoDBpedia sample municipality in RDF/XML",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "A sample municipality in RDF/XML. ",
+                "access_url": "https://opendata.aragon.es/sparql?query=define%20sql%3Adescribe-mode%20%22CBD%22%20%20DESCRIBE%20%3Chttp%3A%2F%2Fopendata.aragon.es%2Frecurso%2Fterritorio%2FMunicipio%2FAbabuj%3E&output=application%2Frdf%2Bxml",
+                "status": "OK"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "Aragon Open Data SPARQL endpoint",
+                "description": "SPARQL endpoint of Aragon Open Data",
+                "access_url": "http://opendata.aragon.es/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Ontology used for the AragoDBpedia data ",
+                "status": "OK",
+                "title": "AragoDBpedia ontology",
+                "mirror": [],
+                "access_url": "http://opendata.aragon.es/def/Aragopedia.html"
+            }
+        ],
+        "description": {
+            "en": "This dataset contains data obtained through an automatic extraction process from Aragopedia (http://opendata.aragon.es/aragopedia/), and contains information about all the municipalities, boroughs, and provinces of the region of Aragón, in Spain. "
+        },
+        "owner": {
+            "name": "",
+            "email": "johannesfreys@googlemail.com"
+        },
+        "website": "https://opendata.aragon.es",
+        "triples": 0,
+        "domain": "government",
+        "namespace": "",
+        "contact_point": {
+            "name": "Aragón Open Data",
+            "email": "opendata@aragon.es"
+        }
+    },
     "wordlift-io-blog-en": {
         "_id": "wordlift-io-blog-en",
         "identifier": "wordlift-io-blog-en",
@@ -777,6 +2051,154 @@
         "contact_point": {
             "name": "WordLift Team",
             "email": "andrea@wordlift.io"
+        }
+    },
+    "bio2rdf-genage": {
+        "_id": "bio2rdf-genage",
+        "identifier": "bio2rdf-genage",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-genage",
+                "value": "1856"
+            },
+            {
+                "target": "bio2rdf-hagr",
+                "value": "298"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "2115"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "2365"
+            },
+            {
+                "target": "bio2rdf-taxonomy",
+                "value": "8"
+            },
+            {
+                "target": "bio2rdf-unigene",
+                "value": "296"
+            },
+            {
+                "target": "bio2rdf-uniprot",
+                "value": "38"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Genage",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download genage_human.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/genage/genage_human.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/genage/genage_human.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download genage_models.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/genage/genage_models.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/genage/genage_models.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/genage:0001",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://genage.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/genage/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/genage/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/genage/genage.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/genage/genage.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/genage/bio2rdf-genage.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/genage/bio2rdf-genage.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/genage/genage.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/genage/genage.schema.owl"
+            },
+            {
+                "media_type": "mapping/owl",
+                "description": "Mappings (SIO)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://raw.githubusercontent.com/bio2rdf/bio2rdf-mapping/master/2/genage/bio2rdf_genage_sio_mapping.owl])",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/genage/bio2rdf_genage_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/genage/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/genage/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "GenAge is a database of human and model organism genes related to longevity and aging, maintained by the Human Ageing Genomics Resources (HAGR) group. "
+        },
+        "owner": "",
+        "website": "http://genage.bio2rdf.org/",
+        "triples": "73048",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/genage:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
         }
     },
     "cz-sao-check-actions": {
@@ -884,6 +2306,392 @@
         "contact_point": {
             "name": "Martin Nečaský",
             "email": "necasky@opendata.cz"
+        }
+    },
+    "bio2rdf-ctd": {
+        "_id": "bio2rdf-ctd",
+        "identifier": "bio2rdf-ctd",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-mesh",
+                "value": "164663"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "297274"
+            },
+            {
+                "target": "bio2rdf-omim",
+                "value": "3831"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "75956"
+            },
+            {
+                "target": "bio2rdf-reactome",
+                "value": "119"
+            },
+            {
+                "target": "bio2rdf-taxonomy",
+                "value": "512"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Ctd",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_chem_gene_ixn_types.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_chem_gene_ixn_types.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_chem_gene_ixn_types.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_chem_gene_ixns.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_chem_gene_ixns.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_chem_gene_ixns.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_chem_go_enriched.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_chem_go_enriched.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_chem_go_enriched.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_chem_pathways_enriched.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_chem_pathways_enriched.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_chem_pathways_enriched.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_chemicals.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_chemicals.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_chemicals.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_chemicals_diseases.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_chemicals_diseases.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_chemicals_diseases.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_diseases.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_diseases.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_diseases.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_diseases_pathways.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_diseases_pathways.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_diseases_pathways.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_genes.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_genes.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_genes.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ctd_genes_diseases.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd_genes_diseases.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ctd/ctd_genes_diseases.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/ctd_resource:D001151406949",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://ctd.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/ctd/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/ctd.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/ctd/ctd.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ctd/bio2rdf-ctd.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/ctd/bio2rdf-ctd.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/ctd/ctd.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/ctd/ctd.schema.owl"
+            },
+            {
+                "media_type": "",
+                "description": "Mappings (SIO)",
+                "status": "OK",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/ctd/bio2rdf_ctd_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/ctd/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/ctd/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "CTD includes manually curated data describing cross-species chemical-gene/protein interactions and chemical- and gene-disease relationships to illuminate molecular mechanisms underlying variable susceptibility and environmentally influenced diseases."
+        },
+        "owner": "",
+        "website": "http://ctd.bio2rdf.org/",
+        "triples": "326720894",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/ctd:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
+        }
+    },
+    "bio2rdf-ncbigene": {
+        "_id": "bio2rdf-ncbigene",
+        "identifier": "bio2rdf-ncbigene",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "858399"
+            },
+            {
+                "target": "bio2rdf-taxonomy",
+                "value": "12374"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Ncbigene",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gene2accession.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/gene2accession.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ncbigene/gene2accession.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gene2ensembl.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/gene2ensembl.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ncbigene/gene2ensembl.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gene2go.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/gene2go.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ncbigene/gene2go.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gene2pubmed.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/gene2pubmed.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ncbigene/gene2pubmed.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gene2sts.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/gene2sts.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ncbigene/gene2sts.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gene2unigene.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/gene2unigene.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ncbigene/gene2unigene.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download gene2vega.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/gene2vega.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ncbigene/gene2vega.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download geneinfo.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/geneinfo.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/ncbigene/geneinfo.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/ncbigene:1",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://ncbigene.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/ncbigene/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/ncbigene.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/ncbigene/ncbigene.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/ncbigene/bio2rdf-ncbigene.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/ncbigene/bio2rdf-ncbigene.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/ncbigene/ncbigene.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/ncbigene/ncbigene.schema.owl"
+            },
+            {
+                "media_type": "mapping/owl",
+                "description": "Mappings (SIO)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://raw.githubusercontent.com/bio2rdf/bio2rdf-mapping/master/2/ncbigene/bio2rdf_ncbigene_sio_mapping.owl])",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/ncbigene/bio2rdf_ncbigene_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/ncbigene/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/ncbigene/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "NCBI Gene provides information for genes from a wide range of species. A record may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations, phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide."
+        },
+        "owner": "",
+        "website": "http://ncbigene.bio2rdf.org/",
+        "triples": "1164672432",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/ncbigene:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
         }
     },
     "diavgeia": {
@@ -1562,6 +3370,139 @@
             "email": ""
         }
     },
+    "bio2rdf-lsr": {
+        "_id": "bio2rdf-lsr",
+        "identifier": "bio2rdf-lsr",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-bio2rdf",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-biodbcore",
+                "value": "97"
+            },
+            {
+                "target": "bio2rdf-lsr",
+                "value": "2173"
+            },
+            {
+                "target": "bio2rdf-miriam",
+                "value": "343"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "236"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Lsr",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download lsr.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/lsr/lsr.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/lsr/lsr.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/lsr:uniprot",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://lsr.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/lsr/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/lsr/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/lsr/lsr.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/lsr/lsr.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/lsr/bio2rdf-lsr.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/lsr/bio2rdf-lsr.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/lsr/lsr.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/lsr/lsr.schema.owl"
+            },
+            {
+                "media_type": "mapping/owl",
+                "description": "Mappings (SIO)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://raw.githubusercontent.com/bio2rdf/bio2rdf-mapping/master/2/lsr/bio2rdf_lsr_sio_mapping.owl])",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/lsr/bio2rdf_lsr_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/lsr/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/lsr/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "The Resource Registry is a curated collection of datasets and terminologies used in the life sciences"
+        },
+        "owner": "",
+        "website": "http://lsr.bio2rdf.org/",
+        "triples": "55914",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/lsr:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
+        }
+    },
     "grrp": {
         "_id": "grrp",
         "identifier": "grrp",
@@ -1726,6 +3667,176 @@
             "email": "info@linkedopendata.it"
         }
     },
+    "bio2rdf-sgd": {
+        "_id": "bio2rdf-sgd",
+        "identifier": "bio2rdf-sgd",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-apo",
+                "value": "241"
+            },
+            {
+                "target": "bio2rdf-chebi",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-ec",
+                "value": "870"
+            },
+            {
+                "target": "bio2rdf-eco",
+                "value": "17"
+            },
+            {
+                "target": "bio2rdf-gene3d",
+                "value": "893"
+            },
+            {
+                "target": "bio2rdf-gi",
+                "value": "37605"
+            },
+            {
+                "target": "bio2rdf-go",
+                "value": "5105"
+            },
+            {
+                "target": "bio2rdf-goa",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "5906"
+            },
+            {
+                "target": "bio2rdf-obi",
+                "value": "10475"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "15442"
+            },
+            {
+                "target": "bio2rdf-refseq",
+                "value": "5824"
+            },
+            {
+                "target": "bio2rdf-sgd",
+                "value": "875109"
+            },
+            {
+                "target": "bio2rdf-so",
+                "value": "1"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "lodcloud-diagram-2011-09-19",
+            "lodcloud-diagram-2014-08-30",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Sgd",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download sgd.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/sgd/sgd.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/sgd/sgd.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/sgd:S000006169",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://sgd.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/sgd/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/sgd/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/sgd/sgd.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/sgd/sgd.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/sgd/bio2rdf-sgd.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/sgd/bio2rdf-sgd.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/sgd/sgd.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/sgd/sgd.schema.owl"
+            },
+            {
+                "media_type": "",
+                "description": "Mappings (SIO)",
+                "status": "OK",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/sgd/bio2rdf_sgd_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/sgd/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/sgd/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "The Saccharomyces Genome Database (SGD) collects and organizes information about the molecular biology and genetics of the yeast Saccharomyces cerevisiae. SGD contains a variety of biological information and tools with which to search and analyze it."
+        },
+        "owner": "",
+        "website": "http://sgd.bio2rdf.org/",
+        "triples": "12494945",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/sgd:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
+        }
+    },
     "cz-czso-job-applicants": {
         "_id": "cz-czso-job-applicants",
         "identifier": "cz-czso-job-applicants",
@@ -1829,6 +3940,56 @@
         "contact_point": {
             "name": "Martin Nečaský",
             "email": "necasky@opendata.cz"
+        }
+    },
+    "BVMC": {
+        "_id": "BVMC",
+        "identifier": "BVMC",
+        "sparql": [
+            {
+                "title": "BVMC SPARQL endpoint ",
+                "_id": "9d25e099-e6fb-f36c-a0bf-870375abf9d1",
+                "description": "Public BVMC SPARQL endpoint ",
+                "access_url": "http://data.cervantesvirtual.com/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "image": "http://fundacion.cervantesvirtual.com/wp-content/uploads/2017/06/FBVMC-logo-hor.txt.jpg",
+        "website": "http://data.cervantesvirtual.com",
+        "keywords": [
+            "Miguel de Cervantes",
+            "Library LOD"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-zero",
+        "title": "Biblioteca Virtual Miguel de Cervantes",
+        "full_download": [],
+        "doi": "",
+        "Image": "",
+        "other_download": [],
+        "description": {
+            "en": "The catalogue of the Biblioteca Virtual Miguel de Cervantes contains about 200,000 records which were originally created in compliance with the MARC21 standard.\n\nThe database content has been later mapped to RDF triples which employ mainly the RDA vocabulary (Resource Description and Access) to describe the entities, as well as their properties and relationships."
+        },
+        "links": [],
+        "owner": {
+            "name": "",
+            "email": "gustavo.candelar@gmail.com"
+        },
+        "namespace": "http://data.cervantesvirtual.com/",
+        "triples": "13000000",
+        "domain": "publications",
+        "example": [
+            {
+                "media_type": "text/html;charset=UTF-8",
+                "description": "Page for the author Miguel de Cervantes Saavedra which includes information from Wikidata",
+                "status": "FAIL (301)",
+                "title": "Miguel de Cervantes Saavedra",
+                "_id": "b4bf32c4-f54f-d5c1-1c41-c996beae108f",
+                "access_url": "http://data.cervantesvirtual.com/person/40"
+            }
+        ],
+        "contact_point": {
+            "name": "FBVMC development team",
+            "email": "desarrollo@cervantesvirtual.com"
         }
     },
     "open-data-thesaurus": {
@@ -2213,6 +4374,79 @@
             "email": "leigh@ldodds.com"
         }
     },
+    "bpr": {
+        "_id": "bpr",
+        "identifier": "bpr",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "viaf",
+                "value": "54"
+            }
+        ],
+        "keywords": [
+            "bibliographic data",
+            "bibliography",
+            "country-italy",
+            "library",
+            "lod",
+            "lodcloud-diagram-2014-08-30",
+            "lodlam",
+            "rdf",
+            "rdf-format"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by-sa",
+        "title": "BPR ? Bibliography of the Italian Parliament and electoral studies",
+        "full_download": [],
+        "example": [
+            {
+                "title": "Example resource",
+                "media_type": "example/rdf+xml",
+                "description": "",
+                "access_url": "http://dati.camera.it/ocd/bpr/monografia.rdf/1745",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "main sparql EndPoint",
+                "description": "it's possible to use the GRAPH http:/dati.camera.it/ocd/bpr/",
+                "access_url": "http://dati.camera.it/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://dati.camera.it/it/download/bpr.html])",
+                "title": "dump download page",
+                "mirror": [],
+                "access_url": "http://dati.camera.it/it/download/bpr.html"
+            },
+            {
+                "media_type": "",
+                "description": "",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://dati.camera.it/void.ttl])",
+                "title": "VOID description ",
+                "mirror": [],
+                "access_url": "http://dati.camera.it/void.ttl#BPR"
+            }
+        ],
+        "description": {
+            "en": "**dati.camera.it - Linked Open Data della Camera dei deputati**  \r\n**The BPR - Bibliografia del Parlamento italiano e degli studi elettorali**  (Bibliography of the Italian Parliament and Electoral Studies) is a database of bibliographic references of books and articles in periodical journals addressing the history of the Italian Parliament and the history of elections. In particular the BPR provides references to studies on:  \r\n\r\n* the Italian Parliament, from the concession of the Statuto Albertino (Albertine Statute) in 1848, the National Consultative Assembly and the Constituent Assembly;\r\n* elections (laws, procedures, results), with reference to general elections as from 1848.  \r\n\r\nThe BPR addresses primarily studies in law, plus studies in political science, organisational science, political sociology, as well as related historiographical literature. In 2002 the BPR started reporting documents posted on the leading juridical websites.  \r\nEach bibliographic reference is assigned one or more classification codes, which are taken from a directory of over 100 classifications organized into seven major fields.  \r\nThe BPR is also a digital library updated non-stop. By using documents in the public domain or available thanks to agreements with private publishers, it provides a selection of full-text documents (monographs, judgements, articles from periodicals, contributions to miscellaneous works) attached to the bibliographic reference.  "
+        },
+        "owner": "",
+        "website": null,
+        "triples": "366800",
+        "domain": "publications",
+        "namespace": "http://dati.camera.it/ocd/bpr/",
+        "contact_point": {
+            "name": "Library of the Italian Chamber of Deputies",
+            "email": "bib_segreteria@camera.it"
+        }
+    },
     "freeyork-org": {
         "_id": "freeyork-org",
         "identifier": "freeyork-org",
@@ -2275,6 +4509,1338 @@
         "contact_point": {
             "name": "WordLift Team",
             "email": "andrea@wordlift.io"
+        }
+    },
+    "bio2rdf-bioportal": {
+        "_id": "bio2rdf-bioportal",
+        "identifier": "bio2rdf-bioportal",
+        "doi": "",
+        "image": "",
+        "links": [
+            {
+                "target": "bio2rdf-aao",
+                "value": "1643"
+            },
+            {
+                "target": "bio2rdf-abbrev",
+                "value": "7"
+            },
+            {
+                "target": "bio2rdf-aeo",
+                "value": "135"
+            },
+            {
+                "target": "bio2rdf-apo",
+                "value": "340"
+            },
+            {
+                "target": "bio2rdf-aracyc",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-atmo",
+                "value": "223"
+            },
+            {
+                "target": "bio2rdf-ato",
+                "value": "6135"
+            },
+            {
+                "target": "bio2rdf-atol",
+                "value": "382"
+            },
+            {
+                "target": "bio2rdf-beilstein",
+                "value": "8622"
+            },
+            {
+                "target": "bio2rdf-bfbbt",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-bfo",
+                "value": "39"
+            },
+            {
+                "target": "bio2rdf-binary-data-type",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-biogrid",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-biopax",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-biotop",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-bs",
+                "value": "3"
+            },
+            {
+                "target": "bio2rdf-bsa",
+                "value": "92"
+            },
+            {
+                "target": "bio2rdf-bsd",
+                "value": "12"
+            },
+            {
+                "target": "bio2rdf-bspo",
+                "value": "158"
+            },
+            {
+                "target": "bio2rdf-bto",
+                "value": "247"
+            },
+            {
+                "target": "bio2rdf-c14240",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-caloha",
+                "value": "142"
+            },
+            {
+                "target": "bio2rdf-caro",
+                "value": "51"
+            },
+            {
+                "target": "bio2rdf-cas",
+                "value": "10"
+            },
+            {
+                "target": "bio2rdf-casrn",
+                "value": "3"
+            },
+            {
+                "target": "bio2rdf-cbwinfo",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-chebi",
+                "value": "64024"
+            },
+            {
+                "target": "bio2rdf-chembl",
+                "value": "756"
+            },
+            {
+                "target": "bio2rdf-chemidplus",
+                "value": "10851"
+            },
+            {
+                "target": "bio2rdf-chemspider",
+                "value": "195"
+            },
+            {
+                "target": "bio2rdf-chmo",
+                "value": "2826"
+            },
+            {
+                "target": "bio2rdf-citexplore",
+                "value": "31951"
+            },
+            {
+                "target": "bio2rdf-cl",
+                "value": "2304"
+            },
+            {
+                "target": "bio2rdf-clo",
+                "value": "3"
+            },
+            {
+                "target": "bio2rdf-cmo",
+                "value": "2503"
+            },
+            {
+                "target": "bio2rdf-co",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-co_125",
+                "value": "8"
+            },
+            {
+                "target": "bio2rdf-co_321",
+                "value": "176"
+            },
+            {
+                "target": "bio2rdf-come",
+                "value": "90"
+            },
+            {
+                "target": "bio2rdf-corum",
+                "value": "11"
+            },
+            {
+                "target": "bio2rdf-cp",
+                "value": "9"
+            },
+            {
+                "target": "bio2rdf-cs",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-ctdi",
+                "value": "26"
+            },
+            {
+                "target": "bio2rdf-ddanat",
+                "value": "135"
+            },
+            {
+                "target": "bio2rdf-dermo",
+                "value": "3514"
+            },
+            {
+                "target": "bio2rdf-diffavg",
+                "value": "549"
+            },
+            {
+                "target": "bio2rdf-diffformula",
+                "value": "656"
+            },
+            {
+                "target": "bio2rdf-diffmono",
+                "value": "560"
+            },
+            {
+                "target": "bio2rdf-dis",
+                "value": "1415"
+            },
+            {
+                "target": "bio2rdf-do",
+                "value": "10320"
+            },
+            {
+                "target": "bio2rdf-doi",
+                "value": "10"
+            },
+            {
+                "target": "bio2rdf-drugbank",
+                "value": "2213"
+            },
+            {
+                "target": "bio2rdf-ec",
+                "value": "4353"
+            },
+            {
+                "target": "bio2rdf-eco",
+                "value": "582"
+            },
+            {
+                "target": "bio2rdf-ecogene",
+                "value": "3977"
+            },
+            {
+                "target": "bio2rdf-ecolexicon",
+                "value": "271"
+            },
+            {
+                "target": "bio2rdf-efo",
+                "value": "128"
+            },
+            {
+                "target": "bio2rdf-efopat_id",
+                "value": "10"
+            },
+            {
+                "target": "bio2rdf-ehda",
+                "value": "8340"
+            },
+            {
+                "target": "bio2rdf-ehdaa",
+                "value": "2270"
+            },
+            {
+                "target": "bio2rdf-ehdaa2",
+                "value": "2604"
+            },
+            {
+                "target": "bio2rdf-emap",
+                "value": "13731"
+            },
+            {
+                "target": "bio2rdf-emapa",
+                "value": "154"
+            },
+            {
+                "target": "bio2rdf-emaps",
+                "value": "1876"
+            },
+            {
+                "target": "bio2rdf-embl",
+                "value": "97799"
+            },
+            {
+                "target": "bio2rdf-ensembl",
+                "value": "16487"
+            },
+            {
+                "target": "bio2rdf-envo",
+                "value": "1696"
+            },
+            {
+                "target": "bio2rdf-eo",
+                "value": "574"
+            },
+            {
+                "target": "bio2rdf-epcc",
+                "value": "13"
+            },
+            {
+                "target": "bio2rdf-evm",
+                "value": "19"
+            },
+            {
+                "target": "bio2rdf-evoc",
+                "value": "159"
+            },
+            {
+                "target": "bio2rdf-fao",
+                "value": "91"
+            },
+            {
+                "target": "bio2rdf-fbbi",
+                "value": "624"
+            },
+            {
+                "target": "bio2rdf-fbbt",
+                "value": "9192"
+            },
+            {
+                "target": "bio2rdf-fbcv",
+                "value": "895"
+            },
+            {
+                "target": "bio2rdf-fbdv",
+                "value": "212"
+            },
+            {
+                "target": "bio2rdf-fbql",
+                "value": "28"
+            },
+            {
+                "target": "bio2rdf-fbsp",
+                "value": "6600"
+            },
+            {
+                "target": "bio2rdf-fix",
+                "value": "1163"
+            },
+            {
+                "target": "bio2rdf-flybrain_ndb",
+                "value": "220"
+            },
+            {
+                "target": "bio2rdf-fma",
+                "value": "1077"
+            },
+            {
+                "target": "bio2rdf-formalcharge",
+                "value": "4"
+            },
+            {
+                "target": "bio2rdf-formula",
+                "value": "912"
+            },
+            {
+                "target": "bio2rdf-ftt",
+                "value": "512"
+            },
+            {
+                "target": "bio2rdf-fyler",
+                "value": "257"
+            },
+            {
+                "target": "bio2rdf-fypo",
+                "value": "3548"
+            },
+            {
+                "target": "bio2rdf-gc_id",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-genedb",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-geonames",
+                "value": "373"
+            },
+            {
+                "target": "bio2rdf-gmelin",
+                "value": "3451"
+            },
+            {
+                "target": "bio2rdf-go",
+                "value": "43159"
+            },
+            {
+                "target": "bio2rdf-goc",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-goeco",
+                "value": "22"
+            },
+            {
+                "target": "bio2rdf-gramene",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-gro",
+                "value": "239"
+            },
+            {
+                "target": "bio2rdf-hamap",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-hao",
+                "value": "16"
+            },
+            {
+                "target": "bio2rdf-hgnc",
+                "value": "18425"
+            },
+            {
+                "target": "bio2rdf-hmdb",
+                "value": "2392"
+            },
+            {
+                "target": "bio2rdf-hom",
+                "value": "66"
+            },
+            {
+                "target": "bio2rdf-hp",
+                "value": "14022"
+            },
+            {
+                "target": "bio2rdf-hprd",
+                "value": "7473"
+            },
+            {
+                "target": "bio2rdf-hsd",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-http",
+                "value": "4"
+            },
+            {
+                "target": "bio2rdf-iao",
+                "value": "9"
+            },
+            {
+                "target": "bio2rdf-icd10",
+                "value": "301"
+            },
+            {
+                "target": "bio2rdf-icd10cm",
+                "value": "207"
+            },
+            {
+                "target": "bio2rdf-icd9",
+                "value": "3"
+            },
+            {
+                "target": "bio2rdf-icd9cm",
+                "value": "3363"
+            },
+            {
+                "target": "bio2rdf-icdo",
+                "value": "3"
+            },
+            {
+                "target": "bio2rdf-id",
+                "value": "253"
+            },
+            {
+                "target": "bio2rdf-ido",
+                "value": "15"
+            },
+            {
+                "target": "bio2rdf-idoden",
+                "value": "6"
+            },
+            {
+                "target": "bio2rdf-idomal",
+                "value": "1688"
+            },
+            {
+                "target": "bio2rdf-imex",
+                "value": "333"
+            },
+            {
+                "target": "bio2rdf-img",
+                "value": "36"
+            },
+            {
+                "target": "bio2rdf-inheres",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-intact",
+                "value": "14924"
+            },
+            {
+                "target": "bio2rdf-interpro",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-irac",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-isbn",
+                "value": "7"
+            },
+            {
+                "target": "bio2rdf-iupac",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-iwis_traitid",
+                "value": "123"
+            },
+            {
+                "target": "bio2rdf-iwis_triatid",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-jaxlabmice",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-kegg",
+                "value": "3607"
+            },
+            {
+                "target": "bio2rdf-kupo",
+                "value": "123"
+            },
+            {
+                "target": "bio2rdf-lipidmaps",
+                "value": "1800"
+            },
+            {
+                "target": "bio2rdf-loinc",
+                "value": "4"
+            },
+            {
+                "target": "bio2rdf-ma",
+                "value": "3262"
+            },
+            {
+                "target": "bio2rdf-maizegdb",
+                "value": "11"
+            },
+            {
+                "target": "bio2rdf-massavg",
+                "value": "862"
+            },
+            {
+                "target": "bio2rdf-massmono",
+                "value": "907"
+            },
+            {
+                "target": "bio2rdf-mat",
+                "value": "459"
+            },
+            {
+                "target": "bio2rdf-meddra",
+                "value": "93"
+            },
+            {
+                "target": "bio2rdf-mesh",
+                "value": "3404"
+            },
+            {
+                "target": "bio2rdf-mesh_dui",
+                "value": "87"
+            },
+            {
+                "target": "bio2rdf-metacyc",
+                "value": "6773"
+            },
+            {
+                "target": "bio2rdf-mfo",
+                "value": "4359"
+            },
+            {
+                "target": "bio2rdf-mgi",
+                "value": "6537"
+            },
+            {
+                "target": "bio2rdf-mi",
+                "value": "83"
+            },
+            {
+                "target": "bio2rdf-miro",
+                "value": "4365"
+            },
+            {
+                "target": "bio2rdf-mmo",
+                "value": "559"
+            },
+            {
+                "target": "bio2rdf-molbase",
+                "value": "294"
+            },
+            {
+                "target": "bio2rdf-mop",
+                "value": "87"
+            },
+            {
+                "target": "bio2rdf-mosbp",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-mp",
+                "value": "11401"
+            },
+            {
+                "target": "bio2rdf-mpath",
+                "value": "892"
+            },
+            {
+                "target": "bio2rdf-mvc",
+                "value": "519"
+            },
+            {
+                "target": "bio2rdf-namerxn",
+                "value": "38"
+            },
+            {
+                "target": "bio2rdf-nbo",
+                "value": "828"
+            },
+            {
+                "target": "bio2rdf-ncbigene",
+                "value": "17386"
+            },
+            {
+                "target": "bio2rdf-ncit",
+                "value": "5418"
+            },
+            {
+                "target": "bio2rdf-ndfrt",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-ne1014",
+                "value": "6"
+            },
+            {
+                "target": "bio2rdf-nif_organism",
+                "value": "12"
+            },
+            {
+                "target": "bio2rdf-nistchemistrywebbook",
+                "value": "3424"
+            },
+            {
+                "target": "bio2rdf-nlx",
+                "value": "4"
+            },
+            {
+                "target": "bio2rdf-nmodb",
+                "value": "70"
+            },
+            {
+                "target": "bio2rdf-nmosp",
+                "value": "41"
+            },
+            {
+                "target": "bio2rdf-obi",
+                "value": "41"
+            },
+            {
+                "target": "bio2rdf-obo",
+                "value": "1135"
+            },
+            {
+                "target": "bio2rdf-obo_sf2_eo",
+                "value": "74"
+            },
+            {
+                "target": "bio2rdf-obo_sf_eo",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-obo_sf_go",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-obo_sf_obo",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-ogmd",
+                "value": "134"
+            },
+            {
+                "target": "bio2rdf-ogms",
+                "value": "8"
+            },
+            {
+                "target": "bio2rdf-omim",
+                "value": "8009"
+            },
+            {
+                "target": "bio2rdf-omit",
+                "value": "395"
+            },
+            {
+                "target": "bio2rdf-opb",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-origin",
+                "value": "142"
+            },
+            {
+                "target": "bio2rdf-orphanet",
+                "value": "4"
+            },
+            {
+                "target": "bio2rdf-osics-10",
+                "value": "115"
+            },
+            {
+                "target": "bio2rdf-panther",
+                "value": "106"
+            },
+            {
+                "target": "bio2rdf-pato",
+                "value": "2531"
+            },
+            {
+                "target": "bio2rdf-pdb",
+                "value": "133"
+            },
+            {
+                "target": "bio2rdf-pdbechem",
+                "value": "2073"
+            },
+            {
+                "target": "bio2rdf-peroxibase",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-pgo",
+                "value": "23"
+            },
+            {
+                "target": "bio2rdf-phi",
+                "value": "376"
+            },
+            {
+                "target": "bio2rdf-pirsf",
+                "value": "567"
+            },
+            {
+                "target": "bio2rdf-plantsystematics_image_archive",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-plo",
+                "value": "14"
+            },
+            {
+                "target": "bio2rdf-pmdermo",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-po",
+                "value": "2007"
+            },
+            {
+                "target": "bio2rdf-pombase",
+                "value": "34"
+            },
+            {
+                "target": "bio2rdf-potato_cooperators",
+                "value": "9"
+            },
+            {
+                "target": "bio2rdf-pr",
+                "value": "62027"
+            },
+            {
+                "target": "bio2rdf-pride",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-pt",
+                "value": "28"
+            },
+            {
+                "target": "bio2rdf-pto",
+                "value": "1511"
+            },
+            {
+                "target": "bio2rdf-pubmed",
+                "value": "1928"
+            },
+            {
+                "target": "bio2rdf-pvp",
+                "value": "11"
+            },
+            {
+                "target": "bio2rdf-pw",
+                "value": "1551"
+            },
+            {
+                "target": "bio2rdf-radlex",
+                "value": "7"
+            },
+            {
+                "target": "bio2rdf-rdo",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-reactome",
+                "value": "38255"
+            },
+            {
+                "target": "bio2rdf-reaxys",
+                "value": "10354"
+            },
+            {
+                "target": "bio2rdf-resid",
+                "value": "382"
+            },
+            {
+                "target": "bio2rdf-reto",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-rex",
+                "value": "552"
+            },
+            {
+                "target": "bio2rdf-rexo",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-rgd",
+                "value": "3573"
+            },
+            {
+                "target": "bio2rdf-rhea",
+                "value": "2798"
+            },
+            {
+                "target": "bio2rdf-ro",
+                "value": "51"
+            },
+            {
+                "target": "bio2rdf-rs",
+                "value": "3796"
+            },
+            {
+                "target": "bio2rdf-rxno",
+                "value": "551"
+            },
+            {
+                "target": "bio2rdf-sabiork",
+                "value": "2"
+            },
+            {
+                "target": "bio2rdf-sael",
+                "value": "116"
+            },
+            {
+                "target": "bio2rdf-sao",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-sbo",
+                "value": "609"
+            },
+            {
+                "target": "bio2rdf-sbol",
+                "value": "28"
+            },
+            {
+                "target": "bio2rdf-scale",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-sctid",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-sep",
+                "value": "194"
+            },
+            {
+                "target": "bio2rdf-sgd",
+                "value": "16"
+            },
+            {
+                "target": "bio2rdf-sgf",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-snap",
+                "value": "21"
+            },
+            {
+                "target": "bio2rdf-snomedct",
+                "value": "13512"
+            },
+            {
+                "target": "bio2rdf-so",
+                "value": "338"
+            },
+            {
+                "target": "bio2rdf-solcap",
+                "value": "9"
+            },
+            {
+                "target": "bio2rdf-source",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-soy",
+                "value": "1835"
+            },
+            {
+                "target": "bio2rdf-soygro",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-soyto",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-soywgr",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-spd",
+                "value": "661"
+            },
+            {
+                "target": "bio2rdf-spire",
+                "value": "37"
+            },
+            {
+                "target": "bio2rdf-ssb",
+                "value": "106"
+            },
+            {
+                "target": "bio2rdf-sweetrealm",
+                "value": "203"
+            },
+            {
+                "target": "bio2rdf-symptom",
+                "value": "23"
+            },
+            {
+                "target": "bio2rdf-synonym",
+                "value": "48"
+            },
+            {
+                "target": "bio2rdf-syoid",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-tads",
+                "value": "629"
+            },
+            {
+                "target": "bio2rdf-tair",
+                "value": "21"
+            },
+            {
+                "target": "bio2rdf-tao",
+                "value": "3105"
+            },
+            {
+                "target": "bio2rdf-taxonomy",
+                "value": "16410"
+            },
+            {
+                "target": "bio2rdf-tcdb",
+                "value": "9"
+            },
+            {
+                "target": "bio2rdf-tdr",
+                "value": "196"
+            },
+            {
+                "target": "bio2rdf-termspec",
+                "value": "3"
+            },
+            {
+                "target": "bio2rdf-tgma",
+                "value": "1865"
+            },
+            {
+                "target": "bio2rdf-tgn",
+                "value": "315"
+            },
+            {
+                "target": "bio2rdf-theonlyoutbredstrainofalbinomousefromharlanlabs",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-theoutbredstrainofalbinomousefromcharlesriver",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-trak",
+                "value": "1292"
+            },
+            {
+                "target": "bio2rdf-tron",
+                "value": "965"
+            },
+            {
+                "target": "bio2rdf-tsn",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-tto",
+                "value": "38705"
+            },
+            {
+                "target": "bio2rdf-uberon",
+                "value": "2412"
+            },
+            {
+                "target": "bio2rdf-umbbd",
+                "value": "323"
+            },
+            {
+                "target": "bio2rdf-umls",
+                "value": "13097"
+            },
+            {
+                "target": "bio2rdf-umls_cuineedmoresynonoyms",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-unipathway",
+                "value": "9"
+            },
+            {
+                "target": "bio2rdf-uniprot",
+                "value": "84160"
+            },
+            {
+                "target": "bio2rdf-uo",
+                "value": "333"
+            },
+            {
+                "target": "bio2rdf-urn",
+                "value": "30406"
+            },
+            {
+                "target": "bio2rdf-uspto",
+                "value": "3419"
+            },
+            {
+                "target": "bio2rdf-v",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-value-type",
+                "value": "11"
+            },
+            {
+                "target": "bio2rdf-vao",
+                "value": "205"
+            },
+            {
+                "target": "bio2rdf-vario",
+                "value": "384"
+            },
+            {
+                "target": "bio2rdf-vfb",
+                "value": "4381"
+            },
+            {
+                "target": "bio2rdf-vhog",
+                "value": "1185"
+            },
+            {
+                "target": "bio2rdf-vo",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-vsmo",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-vt",
+                "value": "3402"
+            },
+            {
+                "target": "bio2rdf-vz",
+                "value": "105"
+            },
+            {
+                "target": "bio2rdf-wbbt",
+                "value": "7578"
+            },
+            {
+                "target": "bio2rdf-wbis",
+                "value": "4"
+            },
+            {
+                "target": "bio2rdf-wbls",
+                "value": "108"
+            },
+            {
+                "target": "bio2rdf-wbpaper",
+                "value": "1"
+            },
+            {
+                "target": "bio2rdf-wbphenotype",
+                "value": "2187"
+            },
+            {
+                "target": "bio2rdf-webelements",
+                "value": "111"
+            },
+            {
+                "target": "bio2rdf-wikipedia",
+                "value": "4903"
+            },
+            {
+                "target": "bio2rdf-wormbase",
+                "value": "5"
+            },
+            {
+                "target": "bio2rdf-wsio_compression",
+                "value": "11"
+            },
+            {
+                "target": "bio2rdf-wsio_data",
+                "value": "9"
+            },
+            {
+                "target": "bio2rdf-wsio_operation",
+                "value": "7"
+            },
+            {
+                "target": "bio2rdf-wsio_transfer",
+                "value": "4"
+            },
+            {
+                "target": "bio2rdf-xao",
+                "value": "391"
+            },
+            {
+                "target": "bio2rdf-xco",
+                "value": "462"
+            },
+            {
+                "target": "bio2rdf-xeo",
+                "value": "144"
+            },
+            {
+                "target": "bio2rdf-ypo",
+                "value": "276"
+            },
+            {
+                "target": "bio2rdf-zea",
+                "value": "179"
+            },
+            {
+                "target": "bio2rdf-zfa",
+                "value": "3006"
+            },
+            {
+                "target": "bio2rdf-zfin",
+                "value": "2828"
+            }
+        ],
+        "keywords": [
+            "bio2rdf",
+            "deref-vocab",
+            "format-dc",
+            "format-rdf",
+            "format-rdfs",
+            "license-metadata",
+            "lifesciences",
+            "lod",
+            "provenance-metadata",
+            "published-by-third-party",
+            "vocab-mappings"
+        ],
+        "license": "http://www.opendefinition.org/licenses/cc-by",
+        "title": "Bio2RDF::Bioportal",
+        "full_download": [
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download aao.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/aao.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/aao.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download aba-amb.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/aba-amb.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/aba-amb.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download acgt-mo.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/acgt-mo.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/acgt-mo.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download ado.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/ado.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/ado.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download adw.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/adw.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/adw.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download aeo.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/aeo.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/aeo.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download aero.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/aero.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/aero.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download amino-acid.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/amino-acid.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/amino-acid.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download apo.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/apo.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/apo.nq.gz"
+            },
+            {
+                "media_type": "application/x-nquads",
+                "description": "Download asdpto.nq.gz (n-quads, gzipped)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/asdpto.nq.gz])",
+                "title": "Download (n-quads, gzipped)",
+                "mirror": [],
+                "download_url": "http://download.bio2rdf.org/current/bioportal/asdpto.nq.gz"
+            }
+        ],
+        "example": [
+            {
+                "title": "Example resource (RDF)",
+                "media_type": "application/rdf+xml; charset=UTF-8",
+                "description": "Example resource (RDF)",
+                "access_url": "http://bio2rdf.org/bioportal:1046",
+                "status": "FAIL (301)"
+            }
+        ],
+        "sparql": [
+            {
+                "title": "SPARQL endpoint",
+                "description": "SPARQL endpoint",
+                "access_url": "http://bioportal.bio2rdf.org/sparql",
+                "status": "FAIL (301)"
+            }
+        ],
+        "other_download": [
+            {
+                "media_type": "",
+                "description": "Download",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/])",
+                "title": "Download page (n-quads, gz compressed)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/bioportal/"
+            },
+            {
+                "media_type": "HTML",
+                "description": "Dataset description (HTML)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/bioportal.html])",
+                "title": "Dataset description (HTML)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/bioportal/bioportal.html"
+            },
+            {
+                "media_type": "meta/void",
+                "description": "Dataset description (RDF)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/current/bioportal/bio2rdf-bioportal.nq])",
+                "title": "Dataset description (RDF)",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/current/bioportal/bio2rdf-bioportal.nq"
+            },
+            {
+                "media_type": "meta/rdf-schema",
+                "description": "OWL Schema",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/bioportal/bioportal.schema.owl])",
+                "title": "OWL Schema",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/bioportal/bioportal.schema.owl"
+            },
+            {
+                "media_type": "mapping/owl",
+                "description": "Mappings (SIO)",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://raw.githubusercontent.com/bio2rdf/bio2rdf-mapping/master/2/bioportal/bio2rdf_bioportal_sio_mapping.owl])",
+                "title": "Mappings (SIO)",
+                "mirror": [],
+                "access_url": "https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/bioportal/bio2rdf_bioportal_sio_mapping.owl"
+            },
+            {
+                "media_type": "meta/sitemap",
+                "description": "Semantic Web Sitemap",
+                "status": "FAIL (HTTP error fetching URL. Status=404, URL=[https://download.bio2rdf.org/release/3/bioportal/sitemap.xml])",
+                "title": "Semantic Web Sitemap",
+                "mirror": [],
+                "access_url": "http://download.bio2rdf.org/release/3/bioportal/sitemap.xml"
+            }
+        ],
+        "description": {
+            "en": "BioPortal is an open repository of biomedical ontologies that provides access via Web services and Web browsers to ontologies developed in OWL, RDF, OBO format and Protege frames. BioPortal functionality includes the ability to browse, search and visualize ontologies."
+        },
+        "owner": "",
+        "website": "http://bioportal.bio2rdf.org/",
+        "triples": "19920395",
+        "domain": "life_sciences",
+        "namespace": "http://bio2rdf.org/bioportal:",
+        "contact_point": {
+            "name": "Bio2RDF",
+            "email": "bio2rdf@googlegroups.com"
         }
     },
     "cz-czso-demography-in-regions-czech-republic-age-categories": {

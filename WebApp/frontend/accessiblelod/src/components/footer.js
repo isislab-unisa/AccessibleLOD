@@ -6,8 +6,8 @@ function Footer() {
     <footer className="bg-light text-center text-muted py-3 mt-auto border-top">
       <div className="container">
         <small>&copy; {new Date().getFullYear()} AccessibleLOD. All rights reserved.</small><br/>
-        <small>Maria Angela Pellegrino, Gabriele Tuozzo and Eleni Ilkou</small>
-{/*         <div className="footer-image" style={{ marginTop: "10px" }}>
+     {/*   <small>Maria Angela Pellegrino, Gabriele Tuozzo and Eleni Ilkou</small>
+         <div className="footer-image" style={{ marginTop: "10px" }}>
           <img
             src={logo} 
             alt="UNISA logo"

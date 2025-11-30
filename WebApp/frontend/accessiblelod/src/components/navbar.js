@@ -12,7 +12,7 @@ function NavBar() {
         </Navbar.Brand>
         <Link to="/">
           <img
-            src="/favicon.png"
+            src={`${process.env.PUBLIC_URL}/favicon.png`}
             alt="Cloud Logo"
             style={{ height: "40px", width: "40px", marginRight: "7px" }}
           />
