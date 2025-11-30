@@ -141,18 +141,22 @@ function FairnessInfo(){
     };
 
     const categorizeMetric = (key) => {
-        const perceivableKeys = ['alt_image_score', 'audio', 'audio_description', 'audio_metadata', 
-                                 'image', 'image_metadata', 'video', 'video_description', 
+        const perceivableKeys = ['audio', 'audio_metadata', 
+                                 'image', 'image_metadata', 'video', 
                                  'video_metadata', 'accessibility_for_deaf', 
                                  'accessibility_for_visually_impaired'];
-        const operableKeys = ['webpage_status', 'robots_txt', 'open_license','contact_person'];
+        const acc4visuallyImpairedKeys = ['alt_image_score', 'audio_description'];
+        const acc4deafKeys = ['video_description', 'video_sign_language', 'audio_sign_language','video_subtitle','audio_subtitle'];
+        const operableKeys = ['robots_txt', 'open_license','contact_person','dump_size','auth','dump_format','alternative_access_point_score'];
         const understandableKeys = ['description_readability', 'labels', 'lang', 'metadata_lang', 'example'];
-        const robustKeys = ['canonical_ID', 'metadata_broken_links', 'version', 'robust'];
+        const robustKeys = ['canonical_ID', 'metadata_broken_links', 'version', 'robust','webpage_status'];
 
         if (perceivableKeys.includes(key)) return 'Perceivable';
         if (operableKeys.includes(key)) return 'Operable';
         if (understandableKeys.includes(key)) return 'Understandable';
         if (robustKeys.includes(key)) return 'Robust';
+        if (acc4visuallyImpairedKeys.includes(key)) return 'Accessibility for Visually Impaired';
+        if (acc4deafKeys.includes(key)) return 'Accessibility for Deaf or Hard-of-hearing Users';
         return 'Other';
     };
 
@@ -170,12 +174,25 @@ function FairnessInfo(){
         'robots_txt',
         'description_readability',
         'labels',
+        'image',
         'example',
         'canonical_ID',
         'metadata_broken_links',
         'version',
         'open_license',
-        'contact_person'
+        'contact_person',
+        'alternative_access_point_score',
+        'audio_description',
+        'audio_sign_language',
+        'audio_subtitle',
+        'auth',
+        'dump_format',
+        'dump_size',
+        'metadata_lang',
+        'video_description',
+        'video_sign_language',
+        'video_subtitle',
+        'lang',
     ];
 
     const renderValue = (value) => {
@@ -194,7 +211,7 @@ function FairnessInfo(){
         .map(([key, value]) => ({
             key,
             label: formatLabel(key),
-            value,
+            value: value.replace(',', '.'),
             category: categorizeMetric(key)
         }))
         .filter(metric => {
@@ -203,7 +220,7 @@ function FairnessInfo(){
             return matchesSearch && matchesCategory;
         });
 
-    const categories = ['all','Perceivable', 'Operable', 'Understandable', 'Robust'];
+    const categories = ['all','Perceivable', 'Operable', 'Understandable', 'Robust', 'Accessibility for Visually Impaired', 'Accessibility for Deaf or Hard-of-hearing Users'];
 
     return (
         <>
@@ -339,7 +356,7 @@ function FairnessInfo(){
                     <Col md={6} sm={12}>
                         <div className="card shadow-sm p-3">
                         <h5 className="card-title text-center"></h5>
-                        <GaugeChart label={'Overall Score'} value={parseFloat(fairness_data['sum_overall'])} />
+                        <GaugeChart label={'Overall Score'} value={parseFloat(fairness_data['sum_overall'].replace(',','.'))} />
                         </div>
                     </Col>
 
